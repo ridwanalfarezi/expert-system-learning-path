@@ -2,6 +2,13 @@
 
 > A multi-step expert system that recommends personalized career learning paths based on user interests and preferences using forward chaining inference.
 
+## 🌐 Live Demo
+
+**Try it now:** [https://ridwanalfarezi.github.io/expert-system-learning-path/](https://ridwanalfarezi.github.io/expert-system-learning-path/)
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=for-the-badge&logo=github)](https://ridwanalfarezi.github.io/expert-system-learning-path/)
+[![License](https://img.shields.io/badge/License-Educational-blue?style=for-the-badge)](LICENSE)
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
