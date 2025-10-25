@@ -1,0 +1,354 @@
+/**
+ * Results Styles
+ * Styling for the results display and learning path cards
+ */
+
+/* Results Container */
+#hasil-container {
+  margin-top: var(--spacing-lg);
+}
+
+#hasil {
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  min-height: 100px;
+}
+
+/* Result Card */
+.result-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: var(--spacing-xl);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+  animation: slideUpBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
+  animation: rotateGradient 10s linear infinite;
+}
+
+.result-card.error {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 10px 40px rgba(245, 87, 108, 0.4);
+}
+
+/* Result Icon */
+.result-icon {
+  font-size: 80px;
+  margin-bottom: var(--spacing-md);
+  animation: bounceIn 1s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  position: relative;
+  z-index: 1;
+}
+
+/* Result Title */
+.result-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: var(--spacing-md);
+  text-transform: capitalize;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  position: relative;
+  z-index: 1;
+  animation: slideInTitle 0.6s ease 0.2s backwards;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Result Domain */
+.result-domain {
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: var(--spacing-lg);
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  animation: fadeInScale 0.5s ease 0.3s backwards;
+}
+
+/* Learning Path Section */
+.learning-path {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: var(--spacing-lg);
+  border-radius: 15px;
+  margin-top: var(--spacing-lg);
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+  animation: slideInUp 0.6s ease 0.4s backwards;
+}
+
+.learning-path h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: var(--spacing-md);
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+.learning-path br {
+  content: "";
+  display: block;
+  margin: var(--spacing-sm) 0;
+}
+
+/* Style the numbered list in learning path */
+.learning-path {
+  line-height: 2;
+  font-size: 15px;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Error State */
+.result-card.error .result-icon {
+  animation: none;
+}
+
+.result-card.error h2 {
+  color: white;
+  font-size: var(--font-size-xl);
+}
+
+.result-card.error p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+}
+
+/* Start Over Button in Results */
+#start-over {
+  margin-top: 0;
+  background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+  background-size: 200% 200%;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+  letter-spacing: 0.3px;
+  font-family: "Poppins", sans-serif;
+}
+
+#start-over:hover {
+  background-position: 100% 50%;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+#start-over:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Shine effect animation */
+@keyframes shine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideUpBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  60% {
+    transform: translateY(-10px) scale(1.02);
+  }
+  80% {
+    transform: translateY(5px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInTitle {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
+  animation: rotateGradient 10s linear infinite;
+  pointer-events: none;
+}
+
+.result-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .result-card {
+    padding: var(--spacing-lg);
+  }
+
+  .result-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .result-icon {
+    font-size: 48px;
+  }
+
+  .learning-path {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .result-card {
+    padding: var(--spacing-md);
+  }
+
+  .result-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .result-icon {
+    font-size: 40px;
+  }
+
+  .learning-path h3 {
+    font-size: var(--font-size-base);
+  }
+
+  #start-over {
+    padding: 12px 24px;
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* Print styles */
+@media print {
+  .result-card {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+
+  .result-title,
+  .learning-path h3 {
+    color: black !important;
+  }
+
+  #start-over {
+    display: none;
+  }
+}

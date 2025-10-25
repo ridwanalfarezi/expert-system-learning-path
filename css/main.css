@@ -1,0 +1,16 @@
+/**
+ * Main CSS File
+ * Imports all CSS modules for the Learning Path Expert System
+ */
+
+/* Base styles - Typography, colors, layout fundamentals */
+@import url("base.css");
+
+/* Form styles - Form elements, buttons, progress indicators */
+@import url("form.css");
+
+/* Transitions - Animations and smooth transitions */
+@import url("transitions.css");
+
+/* Results - Results display and learning path cards */
+@import url("results.css");

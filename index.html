@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pakar Learning Path - Multi Step</title>
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rekomendasi Learning Path Karier</h1>
+      <p>
+        Ikuti langkah-langkah berikut untuk mendapatkan rekomendasi learning
+        path yang sesuai dengan minat Anda
+      </p>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-text" id="progress-text">Langkah 1 dari 3</div>
+
+        <!-- Step Indicators -->
+        <div class="step-indicators">
+          <div class="step-indicator active" id="step-indicator-1">1</div>
+          <div class="step-indicator" id="step-indicator-2">2</div>
+          <div class="step-indicator" id="step-indicator-3">3</div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <!-- Step 1: General Interests -->
+      <div class="step active" id="step-1">
+        <h3 class="form-section-title">Langkah 1: Minat Umum</h3>
+        <p style="text-align: left; margin-bottom: 20px">
+          Pilih minat umum yang sesuai dengan kepribadian Anda:
+        </p>
+
+        <label>
+          <input type="checkbox" id="MINAT_ANALITIKAL" />
+          <span
+            ><strong>Analitikal</strong> - Suka memecahkan masalah, angka, dan
+            logika</span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="MINAT_KREATIF" />
+          <span
+            ><strong>Kreatif</strong> - Suka mendesain, menulis, atau seni</span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="MINAT_SOSIAL" />
+          <span
+            ><strong>Sosial</strong> - Suka berinteraksi atau membantu orang
+            lain</span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="MINAT_BISNIS" />
+          <span
+            ><strong>Bisnis</strong> - Suka strategi, manajemen, dan
+            komersial</span
+          >
+        </label>
+
+        <div class="button-group">
+          <button type="button" id="next-step-1" class="btn-primary">
+            Lanjut ke Preferensi Spesifik →
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Specific Preferences -->
+      <div class="step" id="step-2">
+        <h3 class="form-section-title">Langkah 2: Preferensi Spesifik</h3>
+        <p style="text-align: left; margin-bottom: 20px">
+          Pilih preferensi yang lebih spesifik sesuai minat Anda:
+        </p>
+
+        <label>
+          <input type="checkbox" id="PREFERENSI_VISUAL" />
+          <span
+            ><strong>Visual Design</strong> - Lebih suka merancang
+            gambar/layout</span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="PREFERENSI_TULISAN" />
+          <span
+            ><strong>Content Writing</strong> - Lebih suka merangkai
+            kata/cerita</span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="PREFERENSI_KODE" />
+          <span
+            ><strong>Programming</strong> - Tertarik membuat
+            program/aplikasi</span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="PREFERENSI_DATA" />
+          <span
+            ><strong>Data Analysis</strong> - Tertarik menganalisis data untuk
+            <em>insight</em></span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="PREFERENSI_INFRASTRUKTUR" />
+          <span
+            ><strong>Infrastructure</strong> - Tertarik pada alur data /
+            <em>pipeline</em></span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="PREFERENSI_KEAMANAN" />
+          <span
+            ><strong>Security</strong> - Tertarik pada keamanan sistem /
+            <em>hacking</em></span
+          >
+        </label>
+
+        <label>
+          <input type="checkbox" id="PREFERENSI_PSIKOLOGI_PENGGUNA" />
+          <span
+            ><strong>User Psychology</strong> - Tertarik pada perilaku dan
+            interaksi pengguna</span
+          >
+        </label>
+
+        <div class="button-group">
+          <button type="button" id="back-step-2" class="btn-secondary">
+            ← Kembali
+          </button>
+          <button type="button" id="next-step-2" class="btn-primary">
+            Lihat Hasil →
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Results -->
+      <div class="step" id="step-3">
+        <h3 class="form-section-title">Langkah 3: Hasil Rekomendasi</h3>
+
+        <div id="hasil-container">
+          <div id="hasil">
+            <p>Memuat hasil...</p>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button type="button" id="back-step-3" class="btn-secondary">
+            ← Kembali
+          </button>
+          <button type="button" id="start-over" class="btn-success">
+            🔄 Mulai Ulang
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
