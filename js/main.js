@@ -7,6 +7,6 @@ import { initializeDOM } from './dom.js';
 
 // Initialize the application when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('🚀 Learning Path Expert System v2.0 - Initialized');
+  console.log('🚀 Learning Path Expert System - Initialized');
   initializeDOM();
 });

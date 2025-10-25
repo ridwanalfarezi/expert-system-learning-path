@@ -705,6 +705,4 @@ For questions or issues:
 
 Made with ❤️ for PKB Course
 
-_Version 2.0 - Enhanced Logic Edition_
-
 </div>
