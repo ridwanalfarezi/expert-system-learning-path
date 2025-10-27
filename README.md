@@ -202,8 +202,8 @@ System displays:
 1. **Clone or download** the project:
 
    ```bash
-   git clone <repository-url>
-   cd UTS
+   git clone https://github.com/ridwanalfarezi/expert-system-learning-path.git
+   cd expert-system-learning-path
    ```
 
 2. **Open in browser**:
