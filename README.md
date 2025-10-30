@@ -639,7 +639,7 @@ Potential improvements:
 
 ## 📄 License
 
-This project is created for educational purposes as part of PKB (Pengetahuan Berbasis Komputer) coursework.
+This project is created for educational purposes as part of PKB (Pengantar Kecerdasan Buatan) coursework.
 
 ---
 
